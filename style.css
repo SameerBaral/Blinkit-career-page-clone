@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    /* width: 100%; */
+}
+
+header{
+    /* border: 2px solid black; */
+    background-color: #F8CB46;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+
+.logo img{
+    width: 140px;
+}
+
+.header-bg{
+    width: 100%;
+    height: 500px;
+    background-image: url(./img/career-masthead-desktop.webp);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-color:#F8CB46;
+    background-size: contain;
+}
+
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 5px 10px;
+
+    /* border: 2px solid red; */
+}
+
+nav .nav-links ul{
+    display: flex;
+    gap: 30px;
+}
+
+nav .nav-links ul li{
+    list-style: none;
+}
+
+nav .nav-links ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    /* transition: all 9s; */
+}
+
+nav .nav-links ul li a:hover{
+    border-bottom: 3px solid green;
+    /* transition: all 1s; */
+}
+
+.hamburgur-icon #bar{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/* media query */
+@media only screen and (max-width:680px){
+
+    .nav-links li a{
+        display: none;
+    }
+
+    /* ul{
+        display: none;
+    } */
+}
+
+/* @media (max-width:680px) {
+    .nav-links li a{
+        display: none;
+    }
+
+    ul{
+        display: none;
+    }
+
+    header {
+        height: 60px;
+        width: 100vw;
+    }
+
+} */
+
+
+
+
+
+
+
+
+
+/* ============================================================ */
+/* Body section */
+
+
+.parallax-section{
+    position: relative;
+    height: 100vh;
+    /* background-attachment: fixed; */
+    
+}
+
+.parallax-section  h1{
+    width: 100%;
+    position: absolute;
+    bottom: 290px;
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+}
+
+.main-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    /* margin: 40px 50px; */
+    
+}
+
+.cont{
+    width: 100%;
+    padding: 0 50px;
+}
+
+.content-one h2{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.content-one p{
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+
+.content-two img{
+    width: 100%;
+    height: 500px;
+}
+
+.content-two h2{
+    margin-bottom: 20px;
+}
+
+
+.content-three{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    
+    width: 100%;
+    margin-bottom: 50px;
+    /* border: 2px solid black; */
+}
+
+.three-one{
+    width: 50%;
+    /* border: 2px solid brown; */
+}
+.three-two{
+    width: 50%;
+    /* border: 2px solid green; */
+}
+
+.three-one img{
+    margin: 30px 0px 20px;
+    width: 80%;
+    /* border: 2px solid blue; */
+}
+
+.three-one h3{
+    padding-bottom: 10px;
+}
+.three-one p{
+    /* padding-bottom: 20px; */
+    line-height: 1.2;
+}
+
+
+.three-two img{
+    margin: 30px 0px 20px;
+    width: 80%;
+    /* border: 2px solid blue; */
+}
+
+.three-two h3{
+    padding-bottom: 10px;
+}
+.three-two p{
+    /* padding-bottom: 20px; */
+    line-height: 1.2;
+}
+
+
+/* fourth content part */
+.content-four img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.content-four h3{
+    margin-bottom: 20px;
+}
+
+.content-four p{
+    line-height: 1.3;
+}
+
+#para2{
+    margin-top: 15px;
+}
+
+.content-fifth{
+    display: grid;
+    grid-template-columns: 2fr;
+
+}
