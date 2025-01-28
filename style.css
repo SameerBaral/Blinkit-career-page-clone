@@ -5,39 +5,33 @@
     font-family: sans-serif
 }
 
-header{
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
-    /* width: 100%; */
-}
 
 header{
     /* border: 2px solid black; */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     background-color: #F8CB46;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 10px;
-    width: 100%;
+    max-width: 100vw;
 }
 
+.logo{
+    height: 60px;
+    width: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .logo img{
-    width: 140px;
+    width: 100%;
 }
 
-.header-bg{
-    width: 100%;
-    height: 500px;
-    background-image: url(./img/career-masthead-desktop.webp);
-    background-position:center;
-    background-repeat: no-repeat;
-    background-color:#F8CB46;
-    background-size: contain;
-}
 
 
 .nav-links{
@@ -46,28 +40,27 @@ header{
     justify-content: space-between;
     gap: 20px;
     padding: 5px 10px;
-
+    
     /* border: 2px solid red; */
 }
 
 nav .nav-links ul{
     display: flex;
+    list-style: none;
     gap: 30px;
 }
 
-nav .nav-links ul li{
-    list-style: none;
-}
 
 nav .nav-links ul li a{
     text-decoration: none;
     color: #000;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
     /* transition: all 9s; */
 }
 
-nav .nav-links ul li a:hover{
+li a:hover{
+    cursor: pointer;
     border-bottom: 3px solid green;
     /* transition: all 1s; */
 }
@@ -80,31 +73,12 @@ nav .nav-links ul li a:hover{
 
 /* media query */
 @media only screen and (max-width:680px){
-
-    .nav-links li a{
+    
+    .nav-links li{
         display: none;
     }
-
-    /* ul{
-        display: none;
-    } */
+    
 }
-
-/* @media (max-width:680px) {
-    .nav-links li a{
-        display: none;
-    }
-
-    ul{
-        display: none;
-    }
-
-    header {
-        height: 60px;
-        width: 100vw;
-    }
-
-} */
 
 
 
@@ -115,13 +89,27 @@ nav .nav-links ul li a:hover{
 
 
 /* ============================================================ */
+
+
 /* Body section */
+
+
+.header-bg{
+    width: 100%;
+    height: 500px;
+    background-image: url(./img/career-masthead-desktop.webp);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-color:#F8CB46;
+
+    background-size: cover;
+}
+
 
 
 .parallax-section{
     position: relative;
     height: 100vh;
-    /* background-attachment: fixed; */
     
 }
 
@@ -162,11 +150,11 @@ nav .nav-links ul li a:hover{
 
 .content-two img{
     width: 100%;
-    height: 500px;
+    /* height: 500px; */
 }
 
 .content-two h2{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 
@@ -177,68 +165,29 @@ nav .nav-links ul li a:hover{
     
     width: 100%;
     margin-bottom: 50px;
-    /* border: 2px solid black; */
+    
+    border: 2px solid black;
+    padding-bottom: 20px;
 }
 
 .three-one{
-    width: 50%;
-    /* border: 2px solid brown; */
-}
-.three-two{
-    width: 50%;
-    /* border: 2px solid green; */
+    width: 40%;
+
+    /* border: 2px solid red; */
 }
 
 .three-one img{
-    margin: 30px 0px 20px;
-    width: 80%;
-    /* border: 2px solid blue; */
+    width: 100%;
 }
 
-.three-one h3{
-    padding-bottom: 10px;
-}
-.three-one p{
-    /* padding-bottom: 20px; */
-    line-height: 1.2;
-}
 
+.three-two{
+    width: 40%;
+
+    /* border: 2px solid green; */
+}
 
 .three-two img{
-    margin: 30px 0px 20px;
-    width: 80%;
-    /* border: 2px solid blue; */
-}
-
-.three-two h3{
-    padding-bottom: 10px;
-}
-.three-two p{
-    /* padding-bottom: 20px; */
-    line-height: 1.2;
-}
-
-
-/* fourth content part */
-.content-four img{
     width: 100%;
-    margin-bottom: 30px;
-}
-
-.content-four h3{
-    margin-bottom: 20px;
-}
-
-.content-four p{
-    line-height: 1.3;
-}
-
-#para2{
-    margin-top: 15px;
-}
-
-.content-fifth{
-    display: grid;
-    grid-template-columns: 2fr;
 
 }
